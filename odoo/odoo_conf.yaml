@@ -1,0 +1,6 @@
+---
+
+addons_path:
+    - /opt/odoo/odoo/odoo/addons
+
+admin_passwd: admin

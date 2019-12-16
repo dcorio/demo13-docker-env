@@ -1,0 +1,10 @@
+# Add your python dependecies here
+codicefiscale==0.9
+pyxb==1.2.5
+pudb
+git-aggregator
+ipdb
+pysftp
+numpy
+boto3
+paramiko

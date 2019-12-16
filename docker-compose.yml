@@ -1,0 +1,33 @@
+version: '2'
+volumes:
+    odoodata:
+    pgdata:
+services:
+  odoo:
+    build: odoo
+    image: demo13/odoo-docker-image:13.0
+    container_name: demo13_odoo
+    ports:
+      - 8069:8069
+      - 8072:8072
+    depends_on:
+      - postgres
+    links:
+      - "postgres:postgres"
+    volumes:
+      - "odoodata:/opt/odoo/data"
+      # mount volumes for dev needs
+      # - "./odoo/project_addons:/opt/odoo/project_addons"
+    # launch container in odoo dev mode
+    # command: run --dev
+  postgres:
+    image: postgres:10.0
+    container_name: demo13_postgres
+    # to access pg from outside
+    # ports:
+    #   - 5432:5432
+    environment:
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=odoo
+    volumes:
+      - "pgdata:/var/lib/postgresql/data"
