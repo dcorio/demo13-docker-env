@@ -1,4 +1,4 @@
-FROM dubhe/odoo-docker-image:13.0
+FROM dubheit/odoo-docker-image:13.0
 
 USER root
 
