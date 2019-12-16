@@ -1,4 +1,4 @@
-FROM dcorio/odoo-docker-image:13.0
+FROM dubhe/odoo-docker-image:13.0
 
 USER root
 
