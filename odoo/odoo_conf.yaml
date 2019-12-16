@@ -4,3 +4,9 @@ addons_path:
     - /opt/odoo/odoo/odoo/addons
 
 admin_passwd: admin
+limit_memory_hard: 1610612736 
+limit_memory_soft: 1342177280 
+limit_request: 8192
+limit_time_cpu: 6000
+limit_time_real: 12000
+proxy_mode: True
