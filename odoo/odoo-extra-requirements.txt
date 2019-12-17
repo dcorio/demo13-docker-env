@@ -8,4 +8,4 @@ pysftp
 numpy
 boto3
 paramiko
-PyYAML==3.13
+PyYAML==5.1
