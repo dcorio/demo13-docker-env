@@ -1,6 +1,8 @@
 ---
 
 addons_path:
+    - /opt/odoo/extras
+    - /opt/odoo/oca/project
     - /opt/odoo/odoo/odoo/addons
 
 admin_passwd: admin
