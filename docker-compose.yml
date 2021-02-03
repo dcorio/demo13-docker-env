@@ -20,7 +20,6 @@ services:
     # command: run --dev
   postgres:
     image: postgres:11.0
-    container_name: demo13_postgres
     # to access pg from outside
     # ports:
     #   - 5432:5432
