@@ -19,7 +19,7 @@ services:
     # launch container in odoo dev mode
     # command: run --dev
   postgres:
-    image: postgres:11.0
+    image: postgres:12.0
     # to access pg from outside
     # ports:
     #   - 5432:5432
