@@ -4,9 +4,7 @@ volumes:
     pgdata:
 services:
   odoo:
-    build: odoo
-    image: demo13/odoo-docker-image:13.0
-    container_name: demo13_odoo
+    build: ./odoo
     ports:
       - 8069:8069
       - 8072:8072
